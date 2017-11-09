@@ -1,13 +1,13 @@
 // Configuration
 
-world = {
+const world = {
     activity: {
         DEFAULT_OUTPUT: 3,
         generator: {
             DEFAULT_INTERVAL: 3000,
         }
     }
-}
+};
 
 // Utilities
 

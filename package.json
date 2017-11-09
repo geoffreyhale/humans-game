@@ -4,6 +4,7 @@
   "description": "humans.game is also the name of a node core module.",
   "main": "app.js",
   "scripts": {
+    "js": "babel src/app.js --out-file public/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/geoffreyhale/humans-game",
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
   }
 }
