@@ -1,31 +1,38 @@
 <html>
   <head>
-    <title>Humans Game</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Humans Game</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
   <head>
   <body>
     <h1>Humans Game</h1>
 
-    <form>
-        <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-primary" id="quickstart-sign-in" name="signin">Sign In</button>
-        </div>
-        <div class="form-group">
-            <button type="button" class="btn btn-default" id="quickstart-sign-up" name="signup">Sign Up</button>
-        </div>
-        <button type="button" class="btn btn-success" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
-        <button type="button" class="btn btn-danger" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
-    </form>
+    <div class="form">
+        <form>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-default" id="quickstart-sign-in" name="signin">Sign In</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="quickstart-sign-up" name="signup">Sign Up</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-success" disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-danger" id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+            </div>
+        </form>
+    </div>
 
     <!-- Container where we'll display the user details -->
     <div class="quickstart-user-details-container">

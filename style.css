@@ -1,3 +1,18 @@
+/* My CSS Science/Philosophy: */
+/* 1. Selectors shall be as wide as possible (eg on all forms instead of just a class of forms) */
+/* 2. Property settings shall be as bold as possible (eg don't sneak egg-shell-white in there, use a bold mustard!) */
+/* 3. Comments can be gems even in a css file. */
+/* 4. Keep life fun. */
+/* 5. Love you guys! */
+
 *, body, code {
     font-family: monospace;
+}
+
+body {
+    margin: 2rem;
+}
+
+form {
+    max-width: 300px;
 }
