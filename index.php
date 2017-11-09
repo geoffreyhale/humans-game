@@ -11,12 +11,9 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <h1>Humans Game</h1>
-        </div>
-    </div>
-    <div class="row">
         <div class="col-sm-4">
+            <h1>Humans Game</h1>
+
             <div class="card">
                 <div class="card-body">
                     <div class="quickstart-user-details-container">

@@ -9,14 +9,15 @@
     font-family: monospace;
 }
 
-body {
-    margin: 1rem 0;
-}
-
 form {
     margin-top: 1rem;
 }
 
 .private, .hide-when-signed-out {
     display: none;
+}
+
+div#app {
+    height: 90vh;
+    overflow: auto;
 }
