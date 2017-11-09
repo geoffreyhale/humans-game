@@ -2,9 +2,12 @@
  * Handles the sign in button press.
  */
 function toggleSignIn() {
+    document.getElementById('quickstart-sign-up').style.display = 'none';
+
     if (firebase.auth().currentUser) {
         // [START signout]
         firebase.auth().signOut();
+        document.getElementById('quickstart-sign-up').style.display = 'inherit';
         // [END signout]
     } else {
         var email = document.getElementById('email').value;
@@ -31,6 +34,7 @@ function toggleSignIn() {
             }
             console.log(error);
             document.getElementById('quickstart-sign-in').disabled = false;
+            document.getElementById('quickstart-sign-up').style.display = 'inherit';
             // [END_EXCLUDE]
         });
         // [END authwithemail]
@@ -128,6 +132,7 @@ function initApp() {
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+            document.getElementById('quickstart-sign-up').style.display = 'none';
             document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
             if (!emailVerified) {
                 document.getElementById('quickstart-verify-email').disabled = false;
@@ -138,6 +143,7 @@ function initApp() {
             // [START_EXCLUDE]
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
             document.getElementById('quickstart-sign-in').textContent = 'Sign in';
+            document.getElementById('quickstart-sign-up').style.display = 'inherit';
             document.getElementById('quickstart-account-details').textContent = 'null';
             // [END_EXCLUDE]
         }

@@ -10,9 +10,13 @@
 }
 
 body {
-    margin: 2rem;
+    margin: 1rem 0;
 }
 
 form {
-    max-width: 300px;
+    margin-top: 1rem;
+}
+
+.private, .hide-when-signed-out {
+    display: none;
 }

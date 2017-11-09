@@ -22,7 +22,7 @@ function getRandomIntInclusive(min, max) {
 class Game {
     say(str) {
         //console.log(str);
-        document.body.insertAdjacentHTML("beforeend", moment().format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br>");
+        document.getElementById("app").insertAdjacentHTML("beforeend", moment().format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br>");
     }
 }
 
