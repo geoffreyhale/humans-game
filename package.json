@@ -1,0 +1,27 @@
+{
+  "name": "humans.game",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoffreyhale/humans-game.git"
+  },
+  "keywords": [
+    "humans",
+    "game",
+    "js"
+  ],
+  "author": "Geoffrey Hale",
+  "license": "''",
+  "bugs": {
+    "url": "https://github.com/geoffreyhale/humans-game/issues"
+  },
+  "homepage": "https://github.com/geoffreyhale/humans-game",
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  }
+}
