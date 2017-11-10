@@ -41,36 +41,32 @@ class Game {
                 "text": "250,000 years ago: Early humans began to communicate with symbols—with evidence of the oldest known “crayons” (faceted sticks and chunks of pigment)."
             },
             {
-                "text": "77,000 years ago: Modern humans recorded information on objects."
+                "text": " 77,000 years ago: Modern humans recorded information on objects."
             },
             {
-                "text": "74,000 years ago: Near-extinction of H. sapiens. Greatly reduced population, with numbers estimated at about 10,000 adults of reproductive age to as few as 600."
+                "text": " 74,000 years ago: Near-extinction of H. sapiens. Greatly reduced population, with numbers estimated at about 10,000 adults of reproductive age to as few as 600."
             },
             {
-                "text": "60,000–40,000 years ago: Modern humans created permanent drawings."
+                "text": " 50,000 years ago: Modern humans created permanent drawings."
             },
             {
-                "text": "35,000 years ago: Modern humans created musical instruments."
+                "text": " 35,000 years ago: Modern humans created musical instruments."
             },
             {
-                "text": "15,000 years ago: Modern humans reached the Americas (by at least this date)."
+                "text": " 15,000 years ago: Modern humans reached the Americas (by at least this date)."
             },
             {
-                "text": "12,000 years ago: Humans become a “turning point” in the history of life as they control the growth and breeding of certain plants and animals. Farming and herding ensue, which transformed natural landscapes—first locally, then globally. Food production led to settlement (villages, towns, cities) and population growth."
+                "text": " 12,000 years ago: Humans become a “turning point” in the history of life as they control the growth and breeding of certain plants and animals. Farming and herding ensue, which transformed natural landscapes—first locally, then globally. Food production led to settlement (villages, towns, cities) and population growth."
             },
             {
-                "text": "8,000 years ago: Modern humans use symbols to represent words and concepts."
+                "text": "  8,000 years ago: Modern humans use symbols to represent words and concepts."
             },
             {
-                "text": "2007: More humans live in cities than in rural areas."
+                "text": "2007:                    More humans live in cities than in rural areas."
             },
             {
-                "text": "Purchased humans.game domain registration for $400.",
+                "text": "<strong>humans.game</strong>",
                 "moment": "2017-11-09 06:24:00"
-            },
-            {
-                "text": "def",
-                "moment": "2000-03-21 06:07:08"
             },
         ];
     }
