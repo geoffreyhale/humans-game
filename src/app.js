@@ -17,12 +17,84 @@ function getRandomIntInclusive(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min; //The maximum is inclusive and the minimum is inclusive
 }
 
+const _ = {
+    has(object, path) {
+        return object != null && hasPath(object, path, baseHas);
+    }
+};
+
 // Classes
 
 class Game {
-    say(str) {
+    static get INTRO_TEXT() {
+        return [
+            {
+                "text": "2.6 million years ago: Early humans made basic tools."
+            },
+            {
+                "text": "1.6 million years ago: First major technological innovation. Hand axes are made. Hand-axe technology persists for more than 1.2 million years."
+            },
+            {
+                "text": "800,000 years ago: Early humans had control of fire and created hearths. Beginning of the most rapid increase in early human brain size (relative to body size). The fastest pace of brain enlargement took place between 800,000 and 200,000 years ago."
+            },
+            {
+                "text": "250,000 years ago: Early humans began to communicate with symbols—with evidence of the oldest known “crayons” (faceted sticks and chunks of pigment)."
+            },
+            {
+                "text": "77,000 years ago: Modern humans recorded information on objects."
+            },
+            {
+                "text": "74,000 years ago: Near-extinction of H. sapiens. Greatly reduced population, with numbers estimated at about 10,000 adults of reproductive age to as few as 600."
+            },
+            {
+                "text": "60,000–40,000 years ago: Modern humans created permanent drawings."
+            },
+            {
+                "text": "35,000 years ago: Modern humans created musical instruments."
+            },
+            {
+                "text": "15,000 years ago: Modern humans reached the Americas (by at least this date)."
+            },
+            {
+                "text": "12,000 years ago: Humans become a “turning point” in the history of life as they control the growth and breeding of certain plants and animals. Farming and herding ensue, which transformed natural landscapes—first locally, then globally. Food production led to settlement (villages, towns, cities) and population growth."
+            },
+            {
+                "text": "8,000 years ago: Modern humans use symbols to represent words and concepts."
+            },
+            {
+                "text": "2007: More humans live in cities than in rural areas."
+            },
+            {
+                "text": "Purchased humans.game domain registration for $400.",
+                "moment": "2017-11-09 06:24:00"
+            },
+            {
+                "text": "def",
+                "moment": "2000-03-21 06:07:08"
+            },
+        ];
+    }
+
+    constructor() {
+        for (let i = 0; i < Game.INTRO_TEXT.length; i++) {
+            const line = Game.INTRO_TEXT[i];
+
+            if (line.hasOwnProperty("moment")) {
+                this.say(line.text, line.moment);
+            } else {
+                this.sayPreformatted(line.text);
+            }
+        }
+    }
+
+    say(str, momentStr) {
         //console.log(str);
-        document.getElementById("app").insertAdjacentHTML("beforeend", moment().format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br>");
+        document.getElementById("app").insertAdjacentHTML("beforeend", moment(momentStr).format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br>");
+    }
+
+    sayPreformatted(str) {
+        //console.log(str);
+        document.getElementById("app").insertAdjacentHTML("beforeend", str + "<br><br>");
     }
 }
 
@@ -71,6 +143,11 @@ class Activity {
             this.output = output
         } else {
             this.output = Activity.DEFAULT_OUTPUT;
+        }
+
+        if (output || output === 5) {
+
+            this.output = 'i is can have bug';
         }
 
         if (input || input === 0) {
@@ -129,9 +206,9 @@ class ActivityGenerator {
 
         this.generator = setInterval(() => {
                 const activityName = this.activityNamePrefix + this.activityId++;
-        this.say("created " + activityName + " (activity)");
-        new Activity(activityName);
-    }, _interval);
+            this.say("created " + activityName + " (activity)");
+            new Activity(activityName);
+        }, _interval);
     }
 
     stop() {
