@@ -85,12 +85,18 @@ class Game {
 
     say(str, momentStr) {
         //console.log(str);
-        document.getElementById("app").insertAdjacentHTML("beforeend", moment(momentStr).format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br>");
+        document.getElementById("app").insertAdjacentHTML("beforeend", moment(momentStr).format('YYYY-MM-DD HH:mm:ss') + ": " + str + "<br><br>");
     }
 
     sayPreformatted(str) {
         //console.log(str);
         document.getElementById("app").insertAdjacentHTML("beforeend", str + "<br><br>");
+    }
+}
+
+class User {
+    constructor() {
+        game.say("<strong>user.login</strong>");
     }
 }
 
@@ -217,7 +223,8 @@ class ActivityGenerator {
 
 const game = new Game();
 const humans = [];
-const jobGenerator = new ActivityGenerator("Job");
-jobGenerator.start();
+humans.push(new User());
 
-humans.push(new Human("Adam"));
+// const jobGenerator = new ActivityGenerator("Job");
+// jobGenerator.start();
+
